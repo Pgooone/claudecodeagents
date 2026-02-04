@@ -32,3 +32,26 @@ AI Agents 文档工作流程系统 - Claude Code 技能包
 ## 版本
 
 - v1.0.0 - 初始版本
+
+## 文件清单
+
+### 核心技能
+- `skills/doc-workflow.md` - 主入口
+- `skills/doc-investigate.md` - 需求调查
+- `skills/doc-review.md` - 多维评审
+- `skills/doc-version.md` - 版本管理
+- `skills/doc-note.md` - 备注记录
+
+### 解析器
+- `skills/parsers/parse-url.md` - URL 解析
+- `skills/parsers/parse-doc.md` - 文档解析
+- `skills/parsers/parse-meeting.md` - 会议记录解析
+- `skills/parsers/parse-chat.md` - 对话解析
+
+### 模板
+- `templates/prd-template.md` - PRD 模板
+- `templates/tech-design-template.md` - 技术设计模板
+- `templates/review-report-template.md` - 评审报告模板
+
+### 配置
+- `config/default-config.yaml` - 默认配置
