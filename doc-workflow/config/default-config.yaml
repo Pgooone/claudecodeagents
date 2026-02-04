@@ -1,0 +1,58 @@
+# Doc-Workflow 默认配置文件
+# Default Configuration for Doc-Workflow
+
+# 配置版本 (Config Version)
+config_version: "1.0"
+
+# 基础设置 (Basic Settings)
+basic:
+  # 默认文档类型 (Default Document Type): prd | tech | custom
+  default_doc_type: "prd"
+  # 默认语言 (Default Language): zh-CN | en-US
+  default_language: "zh-CN"
+  # 输出目录 (Output Directory) - 相对于项目根目录
+  output_dir: "docs"
+
+# 评审设置 (Review Settings)
+review:
+  # 默认执行方式 (Default Mode): parallel | grouped | sequential
+  default_mode: "parallel"
+  # 格式评审阈值 (Format Threshold): 1.0 - 5.0
+  format_threshold: 4.0
+  # 架构评审阈值 (Architecture Threshold): 1.0 - 5.0
+  arch_threshold: 4.0
+  # 匹配评审阈值 (Matching Threshold): 1.0 - 5.0
+  match_threshold: 4.0
+  # 高严重度问题上限 (High Issues Max)
+  high_issues_max: 0
+  # 中严重度问题上限 (Medium Issues Max)
+  medium_issues_max: 3
+
+# 版本管理设置 (Version Management Settings)
+version:
+  # 自动触发 (Auto Trigger)
+  auto_trigger: true
+  # 自动提交 Git (Auto Git Commit)
+  auto_git_commit: false
+  # 最大迭代次数 (Max Iterations)
+  max_iterations: 10
+  # 迭代警告阈值 (Iteration Warning)
+  iteration_warning: 5
+
+# Agent 设置 (Agent Settings)
+agents:
+  # 最大并行数 (Max Parallel)
+  max_parallel: 4
+  # 超时时间毫秒 (Timeout MS)
+  timeout_ms: 300000
+  # 重试次数 (Retry Count)
+  retry_count: 2
+
+# 模板设置 (Template Settings)
+templates:
+  # PRD 模板路径 (PRD Template Path)
+  prd_template: "templates/prd-template.md"
+  # 技术设计模板路径 (Tech Design Template Path)
+  tech_template: "templates/tech-design-template.md"
+  # 评审报告模板路径 (Review Report Template Path)
+  review_template: "templates/review-report-template.md"
